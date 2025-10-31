@@ -8,7 +8,23 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&lt { tapping-term-ms = <150>; };
+
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 14>;
+        };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -27,8 +43,6 @@
 &kp LSHFT    &kp Z    &kp X   &kp C             &kp V         &kp B             &lt 2 ESCAPE    &lt 2 GRAVE  &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH         &kp RSHFT
                               &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE       &kp RET      &kp RGUI  &kp RALT  &kp RCTRL
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         ble_layer {
@@ -47,7 +61,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp LS(LG(LC(LA(Y))))  &kp LS(LG(LC(LA(U))))  &kp LS(LG(LC(LA(I))))  &kp LS(LG(LC(LA(O))))  &kp LS(LG(LC(LA(P))))          &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp LS(LC(LA(LG(H))))  &kp LS(LC(LA(LG(J))))  &kp LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))  &kp LS(LC(LA(LG(SEMICOLON))))  &kp LS(LA(LC(LG(APOSTROPHE))))
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(LC(LG(LA(N))))  &kp LS(LC(LA(LG(M))))  &kp LS(LA(LC(COMMA)))  &kp LS(LC(LA(DOT)))    &kp LS(LC(LA(LG(FSLH))))       &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans                 &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans                 &trans                 &trans
             >;
         };
 
