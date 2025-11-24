@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&lt { tapping-term-ms = <150>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -65,12 +67,14 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp EQUAL         &kp N1   &kp N2       &kp N3            &kp N4              &kp N5                                         &kp N6             &kp N7               &kp N8           &kp N9       &kp N0           &kp MINUS
-&mt F19 TAB       &kp Q    &kp W        &kp E             &kp R               &kp T                                          &kp Y              &kp U                &kp I            &kp O        &kp P            &lt 1 BACKSLASH
-&kp LEFT_COMMAND  &lt 3 A  &mt LCTRL S  &mt LEFT_ALT D    &mt LEFT_COMMAND F  &kp G                                          &kp H              &mt RIGHT_COMMAND J  &mt RIGHT_ALT K  &mt RCTRL L  &lt 3 SEMICOLON  &kp SQT
-&kp LSHFT         &kp Z    &kp X        &kp C             &kp V               &kp B             &lt 2 ESCAPE    &lt 2 GRAVE  &kp N              &kp M                &kp COMMA        &kp DOT      &kp FSLH         &kp RSHFT
-                                        &kp LEFT_CONTROL  &kp LEFT_ALT        &kp LEFT_COMMAND  &kp SPACE       &kp ENTER    &kp RIGHT_COMMAND  &kp RALT             &kp RCTRL
+&kp EQUAL         &kp N1   &kp N2             &kp N3                &kp N4                    &kp N5                                         &kp N6             &kp N7                      &kp N8                  &kp N9              &kp N0           &kp MINUS
+&mt F19 TAB       &kp Q    &kp W              &kp E                 &kp R                     &kp T                                          &kp Y              &kp U                       &kp I                   &kp O               &kp P            &lt 1 BACKSLASH
+&kp LEFT_COMMAND  &lt 3 A  &hrm_left LCTRL S  &hrm_left LEFT_ALT D  &hrm_left LEFT_COMMAND F  &kp G                                          &kp H              &hrm_right RIGHT_COMMAND J  &hrm_right RIGHT_ALT K  &hrm_right RCTRL L  &lt 3 SEMICOLON  &kp SQT
+&kp LSHFT         &kp Z    &kp X              &kp C                 &kp V                     &kp B             &lt 2 ESCAPE    &lt 2 GRAVE  &kp N              &kp M                       &kp COMMA               &kp DOT             &kp FSLH         &kp RSHFT
+                                              &kp LEFT_CONTROL      &kp LEFT_ALT              &kp LEFT_COMMAND  &kp SPACE       &kp ENTER    &kp RIGHT_COMMAND  &kp RALT                    &kp RCTRL
             >;
+
+            label = "home";
         };
 
         bluetooth {
@@ -81,6 +85,8 @@
 &trans      &trans        &trans        &trans        &trans        &kp PAUSE_BREAK  &trans     &trans  &trans  &trans  &trans      &trans            &trans           &trans
                                         &trans        &trans        &trans           &kp F19    &trans  &trans  &trans  &trans
             >;
+
+            label = "blue";
         };
 
         function {
@@ -91,6 +97,8 @@
 &trans  &kp LC(LA(LG(LS(Z))))  &kp LC(LA(LG(LS(X))))  &kp LC(LA(LG(LS(C))))  &kp LC(LA(LG(LS(V))))  &kp LC(LA(LG(LS(B))))  &trans    &trans  &kp LS(LC(LG(LA(N))))  &kp LS(LC(LA(LG(M))))  &kp LS(LA(LC(COMMA)))  &kp LS(LC(LA(DOT)))    &kp LS(LC(LA(LG(FSLH))))       &trans
                                                       &trans                 &trans                 &trans                 &trans    &trans  &trans                 &trans                 &trans
             >;
+
+            label = "func";
         };
 
         semicolon {
@@ -101,6 +109,8 @@
 &trans        &trans        &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE     &trans           &trans    &kp DEL        &trans          &trans          &trans           &trans        &trans
                                         &trans                &trans                 &trans         &kp BACKSPACE    &kp BSPC  &trans         &trans          &trans
             >;
+
+            label = "semi";
         };
     };
 };
