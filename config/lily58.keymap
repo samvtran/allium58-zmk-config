@@ -113,11 +113,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp EQUAL                                  &kp N1        &kp N2             &kp N3                &kp N4                    &kp N5                                                  &kp N6           &kp N7                      &kp N8                  &kp N9              &kp N0                &kp MINUS
-&mt F19 TAB                                &kp Q         &kp W              &kp E                 &kp R                     &kp T                                                   &kp Y            &kp U                       &kp I                   &kp O               &kp P                 &lt 1 BACKSLASH
-&kp LEFT_COMMAND                           &lt_left 3 A  &hrm_left LCTRL S  &hrm_left LEFT_ALT D  &hrm_left LEFT_COMMAND F  &kp G                                                   &kp H            &hrm_right RIGHT_COMMAND J  &hrm_right RIGHT_ALT K  &hrm_right RCTRL L  &lt_semi 3 SEMICOLON  &hrm_right RIGHT_COMMAND SQT
-&hrm_left LS(LA(LC(LG(LSHFT)))) LG(SPACE)  &kp Z         &kp X              &kp C                 &kp V                     &kp B           &lt_left 2 ESCAPE    &lt_right 2 GRAVE  &kp N            &kp M                       &kp COMMA               &kp DOT             &kp FSLH              &hrm_right LS(LC(LA(RSHFT))) LA(LC(LS(F17)))
-                                                                            &kp LEFT_CONTROL      &kp LEFT_ALT              &kp LEFT_SHIFT  &kp SPACE            &kp ENTER          &kp RIGHT_SHIFT  &kp RALT                    &kp RCTRL
+&kp EQUAL       &kp N1        &kp N2             &kp N3                &kp N4                    &kp N5                                                    &kp N6             &kp N7                      &kp N8                  &kp N9              &kp N0                &kp MINUS
+&mt F19 TAB     &kp Q         &kp W              &kp E                 &kp R                     &kp T                                                     &kp Y              &kp U                       &kp I                   &kp O               &kp P                 &lt 1 BACKSLASH
+&kp F20         &lt_left 3 A  &hrm_left LCTRL S  &hrm_left LEFT_ALT D  &hrm_left LEFT_COMMAND F  &kp G                                                     &kp H              &hrm_right RIGHT_COMMAND J  &hrm_right RIGHT_ALT K  &hrm_right RCTRL L  &lt_semi 3 SEMICOLON  &hrm_right RIGHT_COMMAND SQT
+&kp LEFT_SHIFT  &kp Z         &kp X              &kp C                 &kp V                     &kp B             &lt_left 2 ESCAPE    &lt_right 2 GRAVE  &kp N              &kp M                       &kp COMMA               &kp DOT             &kp FSLH              &kp RIGHT_SHIFT
+                                                 &kp LEFT_CONTROL      &kp LEFT_ALT              &kp LEFT_COMMAND  &kp SPACE            &kp ENTER          &kp RIGHT_COMMAND  &kp RALT                    &kp RCTRL
             >;
 
             label = "home";
