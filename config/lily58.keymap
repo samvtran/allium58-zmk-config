@@ -136,11 +136,11 @@
 
         bluetooth {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                      &trans  &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT       &kp DELETE
-&trans      &sys_reset    &trans        &trans        &kp C_RESET   &trans                                            &trans  &trans  &kp INS     &trans            &kp PRINTSCREEN  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                                            &trans  &trans  &trans      &trans            &trans           &trans
-&trans      &trans        &trans        &trans        &trans        &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_VOL_DN  &trans  &trans  &trans      &trans            &trans           &trans
-                                        &trans        &trans        &trans           &kp F19            &trans        &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                      &trans  &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp DELETE
+&trans      &sys_reset    &trans           &trans        &kp C_RESET   &trans                                            &trans  &trans  &kp INS     &trans            &kp DELETE  &trans
+&trans      &trans        &kp PRINTSCREEN  &trans        &trans        &trans                                            &trans  &trans  &trans      &trans            &trans      &trans
+&trans      &trans        &trans           &trans        &trans        &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_VOL_DN  &trans  &trans  &trans      &trans            &trans      &trans
+                                           &trans        &trans        &trans           &kp F19            &trans        &trans  &trans  &trans
             >;
 
             label = "blue";
@@ -160,11 +160,11 @@
 
         semicolon {
             bindings = <
-&trans  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)                                        &kp LS(CARET)  &kp LS(AMPS)    &kp LS(STAR)    &kp LS(LPAR)     &kp LS(RPAR)  &kp LS(DELETE)
-&trans  &kp GRAVE     &kp TILDE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp INS                                              &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp END          &trans        &trans
-&trans  &trans        &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                                               &kp PG_DN      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans
-&trans  &trans        &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE     &trans           &kp LS(LC(LA(F17)))  &kp DEL        &trans          &trans          &trans           &trans        &trans
-                                  &trans                &trans                 &trans         &kp BACKSPACE    &kp BSPC             &trans         &trans          &trans
+&trans  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)         &kp LS(DLLR)           &kp LS(PRCNT)                                 &kp LS(CARET)  &kp LS(AMPS)    &kp LS(STAR)    &kp LS(LPAR)     &kp LS(RPAR)  &kp LS(DELETE)
+&trans  &kp GRAVE     &kp TILDE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp INS                                       &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp END          &trans        &trans
+&trans  &trans        &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                                        &kp PG_DN      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans
+&trans  &trans        &trans      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE     &trans    &kp LS(LC(LA(F17)))  &kp DEL        &trans          &trans          &trans           &trans        &trans
+                                  &trans                &trans                 &trans         &trans    &trans               &trans         &trans          &trans
             >;
 
             label = "semi";
