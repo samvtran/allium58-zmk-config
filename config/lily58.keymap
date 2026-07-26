@@ -127,7 +127,7 @@
 &kp ESCAPE      &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                                   &kp N6             &kp N7    &kp N8     &kp N9   &kp N0                &kp BACKSPACE
 &mt F19 TAB     &kp Q   &kp W   &kp E             &kp R         &kp T                                                    &kp Y              &kp U     &kp I      &kp O    &kp P                 &lt 1 BACKSLASH
 &kp F20         &kp A   &kp S   &kp D             &kp F         &kp G                                                    &kp H              &kp J     &kp K      &kp L    &lt_semi 3 SEMICOLON  &lt 2 SQT
-&kp LEFT_SHIFT  &kp Z   &kp X   &kp C             &kp V         &kp B             &lt_left 2 EQUAL    &lt_right 2 MINUS  &kp N              &kp M     &kp COMMA  &kp DOT  &kp FSLH              &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C             &kp V         &kp B             &lt_left 2 MINUS    &lt_right 2 EQUAL  &kp N              &kp M     &kp COMMA  &kp DOT  &kp FSLH              &kp RIGHT_SHIFT
                                 &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE           &kp ENTER          &kp RIGHT_COMMAND  &kp RALT  &kp RCTRL
             >;
 
@@ -136,11 +136,11 @@
 
         bluetooth {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                      &trans  &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp DELETE
-&trans      &sys_reset    &trans           &trans        &kp C_RESET   &trans                                            &trans  &trans  &kp INS     &trans            &kp DELETE  &trans
-&trans      &trans        &kp PRINTSCREEN  &trans        &trans        &trans                                            &trans  &trans  &trans      &trans            &trans      &trans
-&trans      &trans        &trans           &trans        &trans        &kp PAUSE_BREAK  &kp C_VOLUME_UP    &kp C_VOL_DN  &trans  &trans  &trans      &trans            &trans      &trans
-                                           &trans        &trans        &trans           &kp F19            &trans        &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                        &trans  &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT    &kp DELETE
+&trans      &sys_reset    &trans           &trans        &kp C_RESET   &trans                                              &trans  &trans  &kp INS     &trans            &kp DELETE    &trans
+&trans      &trans        &kp PRINTSCREEN  &trans        &trans        &trans                                              &trans  &trans  &kp K_MUTE  &kp C_VOL_DN      &kp C_VOL_UP  &trans
+&trans      &trans        &trans           &trans        &trans        &kp PAUSE_BREAK  &kp C_VOLUME_DOWN    &kp C_VOL_UP  &trans  &trans  &trans      &trans            &trans        &trans
+                                           &trans        &trans        &trans           &kp F19              &trans        &trans  &trans  &trans
             >;
 
             label = "blue";
